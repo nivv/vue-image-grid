@@ -6,7 +6,7 @@
 //   this.addCustomColumns();
 
 //   setTimeout(function(){
-//     this.$dispatch('vue-tables.loaded',data);
+//     this.$dispatch('vue-image-grid.loaded',data);
 //   }.bind(this),0);
 
 // }

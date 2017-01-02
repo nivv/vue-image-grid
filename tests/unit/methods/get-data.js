@@ -10,7 +10,7 @@
 //     byColumn:this.options.filterByColumn?1:0
 //   };
 
-//   this.$dispatch('vue-tables.loading', data);
+//   this.$dispatch('vue-image-grid.loading', data);
 
 //   var data = $.param(data);
 

@@ -2,9 +2,9 @@
 
 Note: using strings as templates is deprecated and will be removed in an upcoming release. Please use functions instead.
 
-[![npm version](https://badge.fury.io/js/vue-tables.svg)](https://badge.fury.io/js/vue-tables) [![Build Status](https://travis-ci.org/matfish2/vue-tables.svg?branch=master)](https://travis-ci.org/matfish2/vue-tables)
+[![npm version](https://badge.fury.io/js/vue-image-grid.svg)](https://badge.fury.io/js/vue-image-grid) [![Build Status](https://travis-ci.org/matfish2/vue-image-grid.svg?branch=master)](https://travis-ci.org/matfish2/vue-image-grid)
 
-Users of VueJs 2 please use [this package](https://github.com/matfish2/vue-tables-2) instead.
+Users of VueJs 2 please use [this package](https://github.com/matfish2/vue-image-grid-2) instead.
 
 This Vue package offers an easy and intuitive way of displaying Bootstrap-styled grids with data coming either from the client or from the server.
 
@@ -21,7 +21,7 @@ This Vue package offers an easy and intuitive way of displaying Bootstrap-styled
 
 # Dependencies
 
-* Vue.js (>=1.0). Required. ([NOT 1.0.27](https://github.com/matfish2/vue-tables/issues/107))
+* Vue.js (>=1.0). Required. ([NOT 1.0.27](https://github.com/matfish2/vue-image-grid/issues/107))
 * Bootstrap (CSS). Optional.
 * vue-resource (>=0.9.0) (server-side component only)
 
@@ -29,17 +29,17 @@ This Vue package offers an easy and intuitive way of displaying Bootstrap-styled
 
 ## Option 1
 
-Compile the code using `browserify` with the `stringify` transform, or [webpack](https://github.com/matfish2/vue-tables/issues/23)
+Compile the code using `browserify` with the `stringify` transform, or [webpack](https://github.com/matfish2/vue-image-grid/issues/23)
 
-    npm install vue-tables
+    npm install vue-image-grid
 
 Require the script:
 
-    var VueTables = require('vue-tables');
+    var VueTables = require('vue-image-grid');
 
 ## Option 2
 
-Import the [compiled standalone file](https://raw.githubusercontent.com/matfish2/vue-tables/master/dist/vue-tables.min.js) into your HTML, which will expose a global `VueTables` variable.
+Import the [compiled standalone file](https://raw.githubusercontent.com/matfish2/vue-image-grid/master/dist/vue-image-grid.min.js) into your HTML, which will expose a global `VueTables` variable.
 
 # Usage
 
@@ -116,7 +116,7 @@ Javascript:
 
 ### Implementations
 
-  I have included [an Eloquent implementation](https://github.com/matfish2/vue-tables/tree/master/server/PHP) for Laravel Users.
+  I have included [an Eloquent implementation](https://github.com/matfish2/vue-image-grid/tree/master/server/PHP) for Laravel Users.
   If you happen to write other implementations for PHP or other languages, a pull request would be most welcome, under the following guidelines:
 
   a. Include the class under `./server/{language}`.
@@ -138,25 +138,25 @@ Use [refs](https://vuejs.org/api/#v-ref) to get the instance.
 
 ## Events
 
-`vue-tables.loading` (server-side)
+`vue-image-grid.loading` (server-side)
 
 Fires off when a request is sent to the server. Sends through the request data.
 
-`vue-tables.loaded` (server-side)
+`vue-image-grid.loaded` (server-side)
 
 Fires off after the response data has been attached to the table. Sends through the response.
 
 You can listen to those two complementary events on a parent component and use them to add and remove a *loading indicator*, respectively.
 
-`vue-tables.error` (server-side)
+`vue-image-grid.error` (server-side)
 
 Fires off if the server returns an invalid code. Sends through the error
 
-`vue-tables.row-click`
+`vue-image-grid.row-click`
 
 Fires off after a row was clicked. sends through the row
 
-`vue-tables.filtered` (client-side)
+`vue-image-grid.filtered` (client-side)
 
 Fires off after a filter was applied to the dataset. Send through the filtered subset.
 
@@ -180,7 +180,7 @@ A. use the `customFilters` option to declare your filters, following this syntax
 
 B. On your application broadcast an event when a filter was applied, and pass the query:
 
-      this.$broadcast('vue-tables.filter::alphabet', query);
+      this.$broadcast('vue-image-grid.filter::alphabet', query);
 
 ## Server Side Filters
 

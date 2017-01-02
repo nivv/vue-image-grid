@@ -1,5 +1,5 @@
 {
-  "name": "vue-tables",
+  "name": "vue-image-grid",
   "description": "Vue.js grid components",
   "main": "index.js",
   "license": "MIT",
@@ -9,7 +9,7 @@
     "tables",
     "grids"
   ],
-  "homepage": "https://github.com/matfish2/vue-tables",
+  "homepage": "https://github.com/matfish2/vue-image-grid",
   "ignore": [
     "**/.*",
     "node_modules",
