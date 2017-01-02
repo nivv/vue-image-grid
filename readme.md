@@ -1,4 +1,4 @@
-# Vue Tables
+# Forked from [Vue Tables](https://github.com/matfish2/vue-tables/)
 
 Note: using strings as templates is deprecated and will be removed in an upcoming release. Please use functions instead.
 
