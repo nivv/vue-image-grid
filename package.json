@@ -1,7 +1,7 @@
 {
-  "name": "vue-tables",
-  "description": "Vue.js grid components",
-  "version": "1.6.41",
+  "name": "vue-image-grid",
+  "description": "Vue.js image grid with filter",
+  "version": "0.1.1",
   "keywords": [
     "vue",
     "bootstrap",
@@ -10,7 +10,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/matfish2/vue-tables"
+    "url": "https://github.com/nivv/vue-image-grid"
   },
   "files": [
     "index.js",
